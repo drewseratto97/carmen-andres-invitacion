@@ -17,8 +17,18 @@
   <meta property="og:image:height" content="630">
   <meta name="theme-color" content="#F7F2E7">
 
-  <meta http-equiv="refresh" content="2;url=https://script.google.com/macros/s/AKfycbxy31hogMUPDE_lrTVhIOfGdHGrw-dZYIUjrh20ht5svDg3NYqUxUJ21SNFMMVXue0GJw/exec">
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get('id');
 
+  if (id) {
+    window.location.replace(
+      'https://script.google.com/macros/s/AKfycbxy31hogMUPDE_lrTVhIOfGdHGrw-dZYIUjrh20ht5svDg3NYqUxUJ21SNFMMVXue0GJw/exec?id='
+      + encodeURIComponent(id)
+    );
+  }
+</script>
+  
   <style>
     * { box-sizing: border-box; }
 
