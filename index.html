@@ -1,87 +1,6874 @@
-
 <!DOCTYPE html>
-<html lang="es">
+
+
+
+<html>
+
+
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Carmen &amp; Andrés | Boda Civil</title>
 
-  <meta name="description" content="Con gran alegría, Carmen y Andrés te invitan a celebrar su boda civil. 14 de noviembre de 2026, a las 12:00 p. m., en Marsellesa Eventos.">
 
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Carmen &amp; Andrés | Boda Civil">
-  <meta property="og:description" content="14 de noviembre de 2026 · 12:00 p. m. · Marsellesa Eventos. Nos encantará compartir contigo este momento tan especial.">
-  <meta property="og:image" content="https://drewseratto97.github.io/carmen-andres-invitacion/preview-boda.png">
-  <meta name="twitter:image" content="https://drewseratto97.github.io/carmen-andres-invitacion/preview-boda.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="theme-color" content="#F7F2E7">
+  <base target="_top">
 
-<script>
-  const params = new URLSearchParams(window.location.search);
-  const id = params.get('id');
 
-  if (id) {
-    window.location.replace(
-      'https://script.google.com/macros/s/AKfycbxy31hogMUPDE_lrTVhIOfGdHGrw-dZYIUjrh20ht5svDg3NYqUxUJ21SNFMMVXue0GJw/exec?id='
-      + encodeURIComponent(id)
-    );
-  }
-</script>
-  
+
+
+
+
+
+  <meta name="viewport"
+
+
+
+        content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
+
+  <title>Carmen & Andrés</title>
+
+
+
+
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+
+
+
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap"
+
+
+
+        rel="stylesheet">
+
+
+
+
+
+
+
   <style>
-    * { box-sizing: border-box; }
+
+
+
+
+
+
+
+    :root {
+
+
+
+      --cream: #f7f2e7;
+
+
+
+      --paper: #fbf8ef;
+
+
+
+      --gold: #9b6f27;
+
+
+
+      --gold-light: #c39a52;
+
+
+
+      --gold-soft: #d8bd88;
+
+
+
+      --ink: #40382d;
+
+
+
+      --olive: #5d694f;
+
+
+
+      --olive-light: #7b856d;
+
+
+
+      --line: rgba(155,111,39,.65);
+
+
+
+    }
+
+
+
+
+
+
+
+    * {
+
+
+
+      box-sizing: border-box;
+
+
+
+    }
+
+
+
+
+
+
+
+    html {
+
+
+
+      scroll-behavior: smooth;
+
+
+
+    }
+
+
+
+
+
+
 
     body {
+
+
+
       margin: 0;
+
+
+
+      background:
+
+
+
+        radial-gradient(
+
+
+
+          ellipse at center,
+
+
+
+          #faf7ef 0%,
+
+
+
+          #f4eee1 70%,
+
+
+
+          #eee5d5 100%
+
+
+
+        );
+
+
+
+      color: var(--ink);
+
+
+
+      font-family: "Cormorant Garamond", serif;
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* ========================================
+
+
+
+       PÁGINAS
+
+
+
+    ======================================== */
+
+
+
+
+
+
+
+    .page {
+
+
+
       min-height: 100vh;
-      display: grid;
-      place-items: center;
-      padding: 24px;
+
+
+
+      padding: 26px;
+
+
+
+
+
+
+
+      display: flex;
+
+
+
+      justify-content: center;
+
+
+
+      align-items: center;
+
+
+
+
+
+
+
+      position: relative;
+
+
+
+    }
+
+
+
+
+
+
+
+    .invitation {
+
+
+
+      position: relative;
+
+
+
+
+
+
+
+      width: min(1000px, 100%);
+
+
+
+      min-height: calc(100vh - 52px);
+
+
+
+
+
+
+
+      background:
+
+
+
+        radial-gradient(
+
+
+
+          circle at 20% 20%,
+
+
+
+          rgba(255,255,255,.55),
+
+
+
+          transparent 30%
+
+
+
+        ),
+
+
+
+        radial-gradient(
+
+
+
+          circle at 80% 80%,
+
+
+
+          rgba(215,192,146,.08),
+
+
+
+          transparent 30%
+
+
+
+        ),
+
+
+
+        var(--paper);
+
+
+
+
+
+
+
+      border: 1px solid var(--gold-light);
+
+
+
+
+
+
+
+      overflow: hidden;
+
+
+
+
+
+
+
+      box-shadow:
+
+
+
+        0 20px 60px rgba(74,57,28,.10);
+
+
+
+    }
+
+
+
+
+
+
+
+    .inner-border {
+
+
+
+      position: absolute;
+
+
+
+      inset: 12px;
+
+
+
+
+
+
+
+      border: 1px solid rgba(155,111,39,.25);
+
+
+
+
+
+
+
+      pointer-events: none;
+
+
+
+
+
+
+
+      z-index: 10;
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* ========================================
+
+
+
+       BOTÁNICA
+
+
+
+    ======================================== */
+
+
+
+
+
+
+
+    .botanical {
+
+
+
+      position: absolute;
+
+
+
+
+
+
+
+      pointer-events: none;
+
+
+
+
+
+
+
+      z-index: 1;
+
+
+
+    }
+
+
+
+
+
+
+
+    .botanical.top-left {
+
+
+
+      top: -25px;
+
+
+
+      left: -25px;
+
+
+
+
+
+
+
+      width: 470px;
+
+
+
+      height: 610px;
+
+
+
+    }
+
+
+
+
+
+
+
+    .botanical.bottom-right {
+
+
+
+      right: -30px;
+
+
+
+      bottom: -30px;
+
+
+
+
+
+
+
+      width: 500px;
+
+
+
+      height: 610px;
+
+
+
+    }
+
+
+
+
+
+
+
+    .botanical.top-right {
+
+
+
+      top: 25px;
+
+
+
+      right: 35px;
+
+
+
+
+
+
+
+      width: 110px;
+
+
+
+      opacity: .75;
+
+
+
+    }
+
+
+
+
+
+
+
+    .botanical.bottom-left {
+
+
+
+      bottom: 35px;
+
+
+
+      left: 35px;
+
+
+
+
+
+
+
+      width: 110px;
+
+
+
+      opacity: .65;
+
+
+
+    }
+
+
+
+
+
+
+
+    .leaf {
+
+
+
+      fill: var(--olive);
+
+
+
+      opacity: .92;
+
+
+
+    }
+
+
+
+
+
+
+
+    .leaf-light {
+
+
+
+      fill: var(--olive-light);
+
+
+
+      opacity: .70;
+
+
+
+    }
+
+
+
+
+
+
+
+    .stem {
+
+
+
+      fill: none;
+
+
+
+      stroke: var(--gold);
+
+
+
+      stroke-width: 2;
+
+
+
+      opacity: .85;
+
+
+
+    }
+
+
+
+
+
+
+
+    .flower {
+
+
+
+      fill: #f8f4e9;
+
+
+
+      stroke: #d4bd8d;
+
+
+
+      stroke-width: 1.5;
+
+
+
+    }
+
+
+
+
+
+
+
+    .flower-center {
+
+
+
+      fill: #c49a50;
+
+
+
+    }
+
+
+
+
+
+
+
+    .berry {
+
+
+
+      fill: #b08a4c;
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* ========================================
+
+
+
+       CONTENIDO
+
+
+
+    ======================================== */
+
+
+
+
+
+
+
+    .content {
+
+
+
+      position: relative;
+
+
+
+
+
+
+
+      z-index: 5;
+
+
+
+
+
+
+
+      min-height: calc(100vh - 52px);
+
+
+
+
+
+
+
+      padding:
+
+
+
+        55px
+
+
+
+        75px
+
+
+
+        55px;
+
+
+
+
+
+
+
+      display: flex;
+
+
+
+      flex-direction: column;
+
+
+
+      align-items: center;
+
+
+
+
+
+
+
       text-align: center;
-      color: #40382d;
-      background: #f7f2e7;
-      font-family: Georgia, serif;
+
+
+
     }
 
-    main {
-      max-width: 520px;
-      padding: 42px 24px;
-      border: 1px solid #b58a45;
-      outline: 1px solid #dfcda8;
-      outline-offset: -8px;
-      background: #fbf8ef;
+
+
+
+
+
+
+
+
+
+
+    /* ========================================
+
+
+
+       ENCABEZADO
+
+
+
+    ======================================== */
+
+
+
+
+
+
+
+    .small-heading {
+
+
+
+      margin-top: 4px;
+
+
+
+
+
+
+
+      font-family: "Montserrat", sans-serif;
+
+
+
+
+
+
+
+      font-size: 10px;
+
+
+
+
+
+
+
+      letter-spacing: 6px;
+
+
+
+
+
+
+
+      color: #8c6b35;
+
+
+
+
+
+
+
+      text-transform: uppercase;
+
+
+
     }
 
-    h1 {
-      font-size: clamp(32px, 8vw, 54px);
-      font-weight: normal;
+
+
+
+
+
+
+    .top-message {
+
+
+
+      position: absolute;
+
+
+
+
+
+
+
+      top: 42px;
+
+
+
+      right: 70px;
+
+
+
+
+
+
+
+      width: 180px;
+
+
+
+
+
+
+
+      font-family: "Montserrat", sans-serif;
+
+
+
+
+
+
+
+      font-size: 9px;
+
+
+
+
+
+
+
+      line-height: 1.9;
+
+
+
+
+
+
+
+      letter-spacing: 4px;
+
+
+
+
+
+
+
+      color: #7b5d31;
+
+
+
+
+
+
+
+      text-align: center;
+
+
+
+
+
+
+
+      text-transform: uppercase;
+
+
+
+    }
+
+
+
+
+
+
+
+    .top-message .tiny-line {
+
+
+
+      width: 45px;
+
+
+
+      height: 1px;
+
+
+
+
+
+
+
+      background: var(--gold);
+
+
+
+
+
+
+
+      margin: 13px auto 0;
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* ========================================
+
+
+
+       NOMBRES
+
+
+
+    ======================================== */
+
+
+
+
+
+
+
+    .names {
+
+
+
+      margin-top: 55px;
+
+
+
+
+
+
+
       color: #76501c;
+
+
+
+
+
+
+
+      font-family: "Bodoni Moda", serif;
+
+
+
+
+
+
+
+      font-size: clamp(62px, 9vw, 105px);
+
+
+
+
+
+
+
+      line-height: .85;
+
+
+
+
+
+
+
+      letter-spacing: 5px;
+
+
+
+
+
+
+
+      font-weight: 500;
+
+
+
+
+
+
+
+      text-transform: uppercase;
+
+
+
     }
 
-    p {
+
+
+
+
+
+
+    .ampersand-row {
+
+
+
+      display: flex;
+
+
+
+
+
+
+
+      align-items: center;
+
+
+
+      justify-content: center;
+
+
+
+
+
+
+
+      width: 100%;
+
+
+
+
+
+
+
+      margin: 18px 0 10px;
+
+
+
+    }
+
+
+
+
+
+
+
+    .amp-line {
+
+
+
+      width: 150px;
+
+
+
+      height: 1px;
+
+
+
+
+
+
+
+      background: var(--gold-light);
+
+
+
+    }
+
+
+
+
+
+
+
+    .ampersand {
+
+
+
+      margin: 0 20px;
+
+
+
+
+
+
+
+      font-family: "Cormorant Garamond", serif;
+
+
+
+
+
+
+
+      font-size: 65px;
+
+
+
+
+
+
+
+      line-height: .6;
+
+
+
+
+
+
+
+      font-style: italic;
+
+
+
+
+
+
+
+      color: #785019;
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* ========================================
+
+
+
+       PADRES
+
+
+
+    ======================================== */
+
+
+
+
+
+
+
+    .parents {
+
+
+
+      display: grid;
+
+
+
+
+
+
+
+      grid-template-columns: 1fr 1px 1fr;
+
+
+
+
+
+
+
+      width: min(700px, 100%);
+
+
+
+
+
+
+
+      margin-top: 45px;
+
+
+
+
+
+
+
+      align-items: center;
+
+
+
+    }
+
+
+
+
+
+
+
+    .parent-column {
+
+
+
+      padding: 0 30px;
+
+
+
+
+
+
+
+      font-family: "Montserrat", sans-serif;
+
+
+
+
+
+
+
+      color: #5d4d39;
+
+
+
+    }
+
+
+
+
+
+
+
+    .parent-title {
+
+
+
+      font-size: 9px;
+
+
+
+
+
+
+
+      letter-spacing: 4px;
+
+
+
+
+
+
+
+      margin-bottom: 12px;
+
+
+
+
+
+
+
+      color: #806233;
+
+
+
+
+
+
+
+      text-transform: uppercase;
+
+
+
+    }
+
+
+
+
+
+
+
+    .parent-name {
+
+
+
+      font-family: "Cormorant Garamond", serif;
+
+
+
+
+
+
+
+      font-size: 19px;
+
+
+
+
+
+
+
+      letter-spacing: 3px;
+
+
+
+
+
+
+
+      line-height: 1.55;
+
+
+
+
+
+
+
+      text-transform: uppercase;
+
+
+
+    }
+
+
+
+
+
+
+
+    .parent-divider {
+
+
+
+      width: 1px;
+
+
+
+
+
+
+
+      height: 70px;
+
+
+
+
+
+
+
+      background: var(--gold);
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* ========================================
+
+
+
+       MENSAJES
+
+
+
+    ======================================== */
+
+
+
+
+
+
+
+    .main-message {
+
+
+
+      max-width: 790px;
+
+
+
+
+
+
+
+      margin-top: 45px;
+
+
+
+
+
+
+
+      font-family: "Montserrat", sans-serif;
+
+
+
+
+
+
+
+      font-size: 12px;
+
+
+
+
+
+
+
+      line-height: 2;
+
+
+
+
+
+
+
+      letter-spacing: 4px;
+
+
+
+
+
+
+
+      text-transform: uppercase;
+
+
+
+
+
+
+
+      color: #4c4032;
+
+
+
+    }
+
+
+
+
+
+
+
+    .romantic-message {
+
+
+
+      max-width: 650px;
+
+
+
+
+
+
+
+      margin-top: 25px;
+
+
+
+
+
+
+
+      font-family: "Cormorant Garamond", serif;
+
+
+
+
+
+
+
+      font-size: 23px;
+
+
+
+
+
+
+
+      line-height: 1.5;
+
+
+
+
+
+
+
+      font-style: italic;
+
+
+
+
+
+
+
+      color: #5c5040;
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* ========================================
+
+
+
+       DATOS DEL EVENTO
+
+
+
+    ======================================== */
+
+
+
+
+
+
+
+    .event-divider {
+
+
+
+      display: flex;
+
+
+
+
+
+
+
+      align-items: center;
+
+
+
+
+
+
+
+      justify-content: center;
+
+
+
+
+
+
+
+      width: min(600px, 90%);
+
+
+
+
+
+
+
+      margin: 38px auto 25px;
+
+
+
+    }
+
+
+
+
+
+
+
+    .event-divider-line {
+
+
+
+      flex: 1;
+
+
+
+
+
+
+
+      height: 1px;
+
+
+
+
+
+
+
+      background: var(--gold-light);
+
+
+
+    }
+
+
+
+
+
+
+
+    .rings {
+
+
+
+      margin: 0 18px;
+
+
+
+
+
+
+
+      font-size: 28px;
+
+
+
+
+
+
+
+      color: #9a6d25;
+
+
+
+    }
+
+
+
+
+
+
+
+    .event-info {
+
+
+
+      display: grid;
+
+
+
+
+
+
+
+      grid-template-columns:
+
+
+
+        1fr
+
+
+
+        1fr
+
+
+
+        1fr;
+
+
+
+
+
+
+
+      width: min(820px, 100%);
+
+
+
+    }
+
+
+
+
+
+
+
+    .event-item {
+
+
+
+      padding: 0 25px;
+
+
+
+
+
+
+
+      min-height: 100px;
+
+
+
+
+
+
+
+      display: flex;
+
+
+
+
+
+
+
+      flex-direction: column;
+
+
+
+
+
+
+
+      align-items: center;
+
+
+
+
+
+
+
+      justify-content: center;
+
+
+
+    }
+
+
+
+
+
+
+
+    .event-item + .event-item {
+
+
+
+      border-left: 1px solid var(--gold-light);
+
+
+
+    }
+
+
+
+
+
+
+
+    .event-icon {
+
+
+
+      font-family: "Cormorant Garamond", serif;
+
+
+
+
+
+
+
+      font-size: 31px;
+
+
+
+
+
+
+
+      color: #8d641f;
+
+
+
+
+
+
+
+      margin-bottom: 7px;
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+    .venue-address {
+      margin-top: 7px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 11px;
       line-height: 1.7;
+      letter-spacing: 0.3px;
+      color: #76664f;
+      text-align: center;
     }
 
-    a {
-      color: #76501c;
+    .venue-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 16px;
     }
+
+    .venue-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 40px;
+      padding: 11px 16px;
+      border: 1px solid #9a7844;
+      border-radius: 2px;
+      background: transparent;
+      color: #76582e;
+      font-family: "Montserrat", sans-serif;
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 1.4px;
+      line-height: 1.4;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .venue-button-primary {
+      background: #8d6a35;
+      border-color: #8d6a35;
+      color: #fffdf8;
+    }
+
+    .venue-button:hover {
+      background: #76582e;
+      border-color: #76582e;
+      color: #fffdf8;
+    }
+
+    @media (max-width: 700px) {
+      .venue-actions {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+
+      .venue-button {
+        width: min(260px, 100%);
+        box-sizing: border-box;
+      }
+    }
+
+    .event-label {
+
+
+
+      font-family: "Montserrat", sans-serif;
+
+
+
+
+
+
+
+      font-size: 9px;
+
+
+
+
+
+
+
+      letter-spacing: 4px;
+
+
+
+
+
+
+
+      color: #705a3a;
+
+
+
+
+
+
+
+      text-transform: uppercase;
+
+
+
+    }
+
+
+
+
+
+
+
+    .event-value {
+
+
+
+      margin-top: 8px;
+
+
+
+
+
+
+
+      font-family: "Bodoni Moda", serif;
+
+
+
+
+
+
+
+      font-size: 19px;
+
+
+
+
+
+
+
+      letter-spacing: 2px;
+
+
+
+
+
+
+
+      color: #3f372d;
+
+
+
+
+
+
+
+      text-transform: uppercase;
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* ========================================
+
+
+
+       VESTIMENTA
+
+
+
+    ======================================== */
+
+
+
+
+
+
+
+    .dress-code {
+
+  margin: 38px auto 0;
+
+  padding-top: 20px;
+
+  border-top: 1px solid var(--gold-light);
+
+  width: fit-content;
+
+  min-width: 220px;
+
+  text-align: center;
+
+}
+
+
+
+.dress-title {
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 9px;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+
+  color: #806234;
+
+  white-space: normal;
+
+  text-align: center;
+
+}
+
+
+
+.dress-value {
+
+  margin-top: 9px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 23px;
+
+  font-style: italic;
+
+  text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+    /* ========================================
+
+
+
+       PIE
+
+
+
+    ======================================== */
+
+
+
+
+
+
+
+    .footer-message {
+
+
+
+      margin-top: auto;
+
+
+
+
+
+
+
+      padding-top: 50px;
+
+
+
+
+
+
+
+      font-family: "Montserrat", sans-serif;
+
+
+
+
+
+
+
+      font-size: 9px;
+
+
+
+
+
+
+
+      line-height: 2;
+
+
+
+
+
+
+
+      letter-spacing: 5px;
+
+
+
+
+
+
+
+      color: #7d6238;
+
+
+
+
+
+
+
+      text-transform: uppercase;
+
+
+
+    }
+
+
+
+
+
+
+
+    .heart {
+
+
+
+      margin-top: 9px;
+
+
+
+
+
+
+
+      color: #6c4813;
+
+
+
+
+
+
+
+      font-size: 18px;
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* ========================================
+
+
+
+       SEGUNDA PÁGINA
+
+
+
+    ======================================== */
+
+
+
+
+
+
+
+    .guest-content {
+
+
+
+      justify-content: center;
+
+
+
+    }
+
+
+
+
+
+
+
+    .guest-intro {
+
+
+
+      margin-top: 35px;
+
+
+
+
+
+
+
+      font-family: "Montserrat", sans-serif;
+
+
+
+
+
+
+
+      font-size: 10px;
+
+
+
+
+
+
+
+      letter-spacing: 5px;
+
+
+
+
+
+
+
+      color: #806234;
+
+
+
+
+
+
+
+      text-transform: uppercase;
+
+
+
+    }
+
+
+
+
+
+
+
+    .guest-name {
+
+  margin-top: 22px;
+
+  font-family: "Bodoni Moda", serif;
+
+  font-size: clamp(36px, 6.4vw, 66px);
+
+  line-height: 1.1;
+
+  letter-spacing: 3px;
+
+  color: #76501c;
+
+  text-transform: uppercase;
+
+  overflow-wrap: anywhere;
+
+}
+
+
+
+
+
+
+
+    .guest-text {
+
+
+
+      max-width: 620px;
+
+
+
+
+
+
+
+      margin-top: 35px;
+
+
+
+
+
+
+
+      font-family: "Cormorant Garamond", serif;
+
+
+
+
+
+
+
+      font-size: 25px;
+
+
+
+
+
+
+
+      line-height: 1.5;
+
+
+
+
+
+
+
+      font-style: italic;
+
+
+
+
+
+
+
+      color: #5d5141;
+
+
+
+    }
+
+
+
+
+
+
+
+    .reserved {
+
+
+
+      margin-top: 45px;
+
+
+
+
+
+
+
+      font-family: "Montserrat", sans-serif;
+
+
+
+
+
+
+
+      font-size: 10px;
+
+
+
+
+
+
+
+      letter-spacing: 5px;
+
+
+
+
+
+
+
+      text-transform: uppercase;
+
+
+
+
+
+
+
+      color: #806234;
+
+
+
+    }
+
+
+
+
+
+
+
+    .slots {
+
+
+
+      margin-top: 5px;
+
+
+
+
+
+
+
+      font-family: "Bodoni Moda", serif;
+
+
+
+
+
+
+
+      font-size: 55px;
+
+
+
+
+
+
+
+      color: #76501c;
+
+
+
+    }
+
+
+
+
+
+
+
+    .rsvp {
+
+
+
+      display: inline-block;
+
+
+
+
+
+
+
+      margin-top: 30px;
+
+
+
+
+
+
+
+      padding: 15px 35px;
+
+
+
+
+
+
+
+      border: 1px solid var(--gold);
+
+
+
+
+
+
+
+      background: transparent;
+
+
+
+
+
+
+
+      color: #76501c;
+
+
+
+
+
+
+
+      font-family: "Montserrat", sans-serif;
+
+
+
+
+
+
+
+      font-size: 9px;
+
+
+
+
+
+
+
+      letter-spacing: 4px;
+
+
+
+
+
+
+
+      text-transform: uppercase;
+
+
+
+
+
+
+
+      cursor: pointer;
+
+
+
+
+
+
+
+      transition:
+
+
+
+        background .3s ease,
+
+
+
+        color .3s ease;
+
+
+
+    }
+
+
+
+
+
+
+
+    .rsvp:hover {
+
+
+
+      background: #76501c;
+
+
+
+
+
+
+
+      color: white;
+
+
+
+    }
+
+
+
+
+
+
+
+    .rsvp-box {
+
+
+
+      display: none;
+
+
+
+
+
+
+
+      margin-top: 30px;
+
+
+
+    }
+
+
+
+
+
+
+
+    .select {
+
+
+
+      margin-top: 15px;
+
+
+
+
+
+
+
+      padding: 12px 18px;
+
+
+
+
+
+
+
+      min-width: 170px;
+
+
+
+
+
+
+
+      border: 1px solid var(--gold-light);
+
+
+
+
+
+
+
+      background: #fbf8ef;
+
+
+
+
+
+
+
+      font-family: "Montserrat", sans-serif;
+
+
+
+
+
+
+
+      color: #514536;
+
+
+
+    }
+
+
+
+
+
+
+
+    .message {
+
+
+
+      margin-top: 20px;
+
+
+
+
+
+
+
+      font-family: "Cormorant Garamond", serif;
+
+
+
+
+
+
+
+      font-size: 21px;
+
+
+
+
+
+
+
+      line-height: 1.5;
+
+
+
+    }
+
+
+
+
+
+
+
+    .verse {
+
+
+
+      max-width: 600px;
+
+
+
+
+
+
+
+      margin-top: auto;
+
+
+
+
+
+
+
+      padding-top: 50px;
+
+
+
+
+
+
+
+      font-family: "Cormorant Garamond", serif;
+
+
+
+
+
+
+
+      font-size: 20px;
+
+
+
+
+
+
+
+      line-height: 1.5;
+
+
+
+
+
+
+
+      font-style: italic;
+
+
+
+
+
+
+
+      color: #665a4b;
+
+
+
+    }
+
+
+
+
+
+
+
+    .verse-reference {
+
+
+
+      display: block;
+
+
+
+
+
+
+
+      margin-top: 10px;
+
+
+
+
+
+
+
+      font-family: "Montserrat", sans-serif;
+
+
+
+
+
+
+
+      font-size: 8px;
+
+
+
+
+
+
+
+      letter-spacing: 4px;
+
+
+
+
+
+
+
+      font-style: normal;
+
+
+
+
+
+
+
+      color: #8b6a37;
+
+
+
+
+
+
+
+      text-transform: uppercase;
+
+
+
+    }
+
+
+
+
+
+
+
+    .error {
+
+
+
+      font-family: "Cormorant Garamond", serif;
+
+
+
+
+
+
+
+      font-size: 30px;
+
+
+
+
+
+
+
+      text-align: center;
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* ========================================
+
+
+
+       MÓVIL
+
+
+
+    ======================================== */
+
+
+
+
+
+
+
+    @media (max-width: 700px) {
+
+
+
+
+
+
+
+      .page {
+
+
+
+        padding: 10px;
+
+
+
+      }
+
+
+
+
+
+
+
+      .invitation {
+
+
+
+        min-height: calc(100vh - 20px);
+
+
+
+      }
+
+
+
+
+
+
+
+      .content {
+
+
+
+        min-height: calc(100vh - 20px);
+
+
+
+
+
+
+
+        padding:
+
+
+
+          40px
+
+
+
+          24px
+
+
+
+          40px;
+
+
+
+      }
+
+
+
+
+
+
+
+      .inner-border {
+
+
+
+        inset: 8px;
+
+
+
+      }
+
+
+
+
+
+
+
+      .botanical.top-left {
+
+
+
+        width: 260px;
+
+
+
+        height: 360px;
+
+
+
+
+
+
+
+        top: -15px;
+
+
+
+        left: -20px;
+
+
+
+      }
+
+
+
+
+
+
+
+      .botanical.bottom-right {
+
+
+
+        width: 300px;
+
+
+
+        height: 390px;
+
+
+
+
+
+
+
+        right: -25px;
+
+
+
+        bottom: -20px;
+
+
+
+      }
+
+
+
+
+
+
+
+      .top-message {
+
+
+
+        position: relative;
+
+
+
+
+
+
+
+        top: auto;
+
+
+
+        right: auto;
+
+
+
+
+
+
+
+        align-self: flex-end;
+
+
+
+
+
+
+
+        width: 135px;
+
+
+
+
+
+
+
+        font-size: 7px;
+
+
+
+
+
+
+
+        letter-spacing: 3px;
+
+
+
+      }
+
+
+
+
+
+
+
+      .small-heading {
+
+
+
+        margin-top: 30px;
+
+
+
+
+
+
+
+        font-size: 8px;
+
+
+
+
+
+
+
+        letter-spacing: 4px;
+
+
+
+      }
+
+
+
+
+
+
+
+      .names {
+
+
+
+        margin-top: 70px;
+
+
+
+
+
+
+
+        font-size: clamp(48px, 14vw, 72px);
+
+
+
+
+
+
+
+        letter-spacing: 2px;
+
+
+
+      }
+
+
+
+
+
+
+
+      .amp-line {
+
+
+
+        width: 60px;
+
+
+
+      }
+
+
+
+
+
+
+
+      .ampersand {
+
+
+
+        font-size: 48px;
+
+
+
+
+
+
+
+        margin: 0 12px;
+
+
+
+      }
+
+
+
+
+
+
+
+      .parents {
+
+
+
+        grid-template-columns: 1fr;
+
+
+
+
+
+
+
+        gap: 20px;
+
+
+
+
+
+
+
+        margin-top: 30px;
+
+
+
+      }
+
+
+
+
+
+
+
+      .parent-divider {
+
+
+
+        width: 65px;
+
+
+
+
+
+
+
+        height: 1px;
+
+
+
+
+
+
+
+        margin: auto;
+
+
+
+      }
+
+
+
+
+
+
+
+      .parent-column {
+
+
+
+        padding: 0 10px;
+
+
+
+      }
+
+
+
+
+
+
+
+      .parent-name {
+
+
+
+        font-size: 16px;
+
+
+
+      }
+
+
+
+
+
+
+
+      .main-message {
+
+
+
+        margin-top: 32px;
+
+
+
+
+
+
+
+        font-size: 9px;
+
+
+
+
+
+
+
+        line-height: 1.8;
+
+
+
+
+
+
+
+        letter-spacing: 2.5px;
+
+
+
+      }
+
+
+
+
+
+
+
+      .romantic-message {
+
+
+
+        font-size: 20px;
+
+
+
+      }
+
+
+
+
+
+
+
+      .event-info {
+
+
+
+        grid-template-columns: 1fr;
+
+
+
+      }
+
+
+
+
+
+
+
+      .event-item {
+
+
+
+        min-height: 90px;
+
+
+
+
+
+
+
+        padding: 18px;
+
+
+
+      }
+
+
+
+
+
+
+
+      .event-item + .event-item {
+
+
+
+        border-left: 0;
+
+
+
+
+
+
+
+        border-top: 1px solid var(--gold-light);
+
+
+
+      }
+
+
+
+
+
+
+
+      .event-value {
+
+
+
+        font-size: 17px;
+
+
+
+      }
+
+
+
+
+
+
+
+      .guest-name {
+
+  font-size: 36px;
+
+  letter-spacing: 1.5px;
+
+
+
+      }
+
+
+
+
+
+
+
+      .guest-text {
+
+
+
+        font-size: 21px;
+
+
+
+      }
+
+
+
+
+
+
+
+      .footer-message {
+
+
+
+        letter-spacing: 3px;
+
+
+
+      }
+
+
+
+    }
+
+
+
+
+
+
+
+  
+
+    /* PORTADA PREMIUM: papelería editorial marfil, oro y flores */
+    #goldParticles { position:fixed; inset:0; width:100%; height:100%; pointer-events:none; z-index:1; opacity:.62; }
+    body > section.page { z-index:2; }
+    body.invitation-locked > section.page { visibility:hidden; }
+    .opening-screen {
+      position:fixed; inset:0; z-index:50; display:grid; place-items:center;
+      overflow:auto; padding:clamp(22px,4vh,48px) 18px;
+      background:radial-gradient(ellipse at 50% 42%,rgba(255,253,246,.98) 0%,rgba(248,238,218,.98) 62%,#e9d9b9 100%);
+      transition:opacity 1s ease,visibility 1s ease;
+    }
+    .opening-screen::before,.opening-screen::after { content:""; position:absolute; pointer-events:none; width:clamp(130px,25vw,300px); height:clamp(160px,29vw,330px); opacity:.78; background-repeat:no-repeat; background-size:contain; }
+    .opening-screen::before { top:-18px; left:-18px; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 300'%3E%3Cg fill='none' stroke='%238b9569' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M-10 210 Q70 170 115 75 Q145 30 205 8 M30 180 Q30 110 10 72 M72 145 Q115 150 150 120 M110 83 Q85 45 88 12 M150 48 Q185 75 225 70'/%3E%3C/g%3E%3Cg fill='%23fffaf0' stroke='%23d8bd88' stroke-width='1.2'%3E%3Ccircle cx='35' cy='54' r='12'/%3E%3Ccircle cx='35' cy='38' r='10'/%3E%3Ccircle cx='50' cy='49' r='10'/%3E%3Ccircle cx='44' cy='65' r='10'/%3E%3Ccircle cx='27' cy='66' r='10'/%3E%3Ccircle cx='18' cy='50' r='10'/%3E%3Ccircle cx='140' cy='102' r='9'/%3E%3Ccircle cx='140' cy='90' r='7'/%3E%3Ccircle cx='151' cy='100' r='7'/%3E%3Ccircle cx='145' cy='112' r='7'/%3E%3Ccircle cx='133' cy='111' r='7'/%3E%3C/g%3E%3Cg fill='%238c9a70'%3E%3Cellipse cx='24' cy='143' rx='18' ry='7' transform='rotate(-35 24 143)'/%3E%3Cellipse cx='89' cy='133' rx='21' ry='8' transform='rotate(25 89 133)'/%3E%3Cellipse cx='91' cy='45' rx='20' ry='8' transform='rotate(-45 91 45)'/%3E%3Cellipse cx='183' cy='34' rx='22' ry='9' transform='rotate(22 183 34)'/%3E%3C/g%3E%3C/svg%3E"); }
+    .opening-screen::after { right:-22px; bottom:-25px; transform:rotate(180deg); background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 300'%3E%3Cg fill='none' stroke='%238b9569' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M-10 210 Q70 170 115 75 Q145 30 205 8 M30 180 Q30 110 10 72 M72 145 Q115 150 150 120 M110 83 Q85 45 88 12 M150 48 Q185 75 225 70'/%3E%3C/g%3E%3Cg fill='%23fffaf0' stroke='%23d8bd88' stroke-width='1.2'%3E%3Ccircle cx='35' cy='54' r='12'/%3E%3Ccircle cx='35' cy='38' r='10'/%3E%3Ccircle cx='50' cy='49' r='10'/%3E%3Ccircle cx='44' cy='65' r='10'/%3E%3Ccircle cx='27' cy='66' r='10'/%3E%3Ccircle cx='18' cy='50' r='10'/%3E%3Ccircle cx='140' cy='102' r='9'/%3E%3Ccircle cx='140' cy='90' r='7'/%3E%3Ccircle cx='151' cy='100' r='7'/%3E%3Ccircle cx='145' cy='112' r='7'/%3E%3Ccircle cx='133' cy='111' r='7'/%3E%3C/g%3E%3Cg fill='%238c9a70'%3E%3Cellipse cx='24' cy='143' rx='18' ry='7' transform='rotate(-35 24 143)'/%3E%3Cellipse cx='89' cy='133' rx='21' ry='8' transform='rotate(25 89 133)'/%3E%3Cellipse cx='91' cy='45' rx='20' ry='8' transform='rotate(-45 91 45)'/%3E%3Cellipse cx='183' cy='34' rx='22' ry='9' transform='rotate(22 183 34)'/%3E%3C/g%3E%3C/svg%3E"); }
+    .opening-screen.is-opening { opacity:0; visibility:hidden; pointer-events:none; }
+    .opening-wrap { position:relative; z-index:2; width:min(1080px,96vw); text-align:center; }
+    .opening-kicker { font:clamp(10px,1.15vw,15px) Montserrat,sans-serif; letter-spacing:clamp(3px,.55vw,7px); color:#805a25; text-transform:uppercase; margin:0 auto clamp(22px,4vh,42px); }
+    .opening-kicker::after { content:"✣"; display:block; margin:18px auto 0; width:min(430px,70vw); color:#a77b36; font-size:18px; line-height:1; border-bottom:1px solid #c5a46a; padding-bottom:12px; }
+    .envelope { position:relative; isolation:isolate; width:min( min(100%,1040px), 91vw); height:clamp(350px,56vw, min(630px,64vh)); min-height:340px; margin:0 auto clamp(26px,4vh,40px); background:linear-gradient(135deg,#f5e8cf,#e8d4ad 48%,#f9efd9); border:1px solid #bd9147; box-shadow:0 28px 75px rgba(74,57,28,.2), inset 0 0 0 7px rgba(255,255,255,.24); perspective:1200px; overflow:visible; }
+    .envelope::before { content:""; position:absolute; inset:0; z-index:1; background:linear-gradient(145deg,transparent 49.5%,rgba(155,111,39,.20) 50%,transparent 50.6%),linear-gradient(35deg,transparent 49.5%,rgba(155,111,39,.15) 50%,transparent 50.6%); pointer-events:none; }
+    .envelope::after { content:""; position:absolute; inset:14px; z-index:0; border:1px solid rgba(180,135,60,.28); pointer-events:none; }
+    .envelope-card { position:absolute; z-index:0; left:8%; right:8%; bottom:5%; height:82%; background:radial-gradient(ellipse at center,#fffdf7 0%,#fbf7ed 72%,#f2e5ce 100%); border:1px solid #d8bd88; box-shadow:0 4px 18px rgba(87,63,28,.1); display:flex; flex-direction:column; justify-content:center; align-items:center; color:#76501c; transition:transform 1s cubic-bezier(.2,.7,.2,1); }
+    .envelope-card span:first-child { font:clamp(9px,.95vw,12px) Montserrat,sans-serif; letter-spacing:4px; text-transform:uppercase; }
+    .envelope-card strong { font:italic clamp(38px,7vw,78px) 'Bodoni Moda',serif; font-weight:400; line-height:1.05; margin:18px 0 22px; }
+    .envelope-card span:last-child { font:clamp(11px,1.4vw,17px) 'Bodoni Moda',serif; letter-spacing:3px; }
+    .envelope-flap { position:absolute; inset:0 0 auto; height:58%; z-index:3; background:linear-gradient(145deg,#ead9b8,#e5d0a8 55%,#f0e2c5); clip-path:polygon(0 0,100% 0,50% 100%); transform-origin:top center; transition:transform 1s cubic-bezier(.2,.7,.2,1); border-top:1px solid #c39a52; filter:drop-shadow(0 8px 5px rgba(95,68,24,.08)); }
+    .wax-seal { position:absolute; z-index:4; left:50%; top:43%; transform:translate(-50%,-50%); width:clamp(82px,12vw,132px); aspect-ratio:1; display:grid; place-items:center; border-radius:50%; color:#f8f1e2; background:radial-gradient(circle at 32% 25%,#d7b66b 0%,#aa7a2e 48%,#76501c 100%); border:3px solid #d8b66e; box-shadow:0 5px 13px #8e692d55,inset 0 0 0 4px rgba(255,232,172,.18),inset 0 0 0 7px rgba(96,59,13,.15); transition:opacity .35s ease,transform .6s ease; }
+    .wax-seal svg { width:68%; height:68%; filter:drop-shadow(0 1px 1px rgba(70,42,7,.4)); }
+    .opening-screen.opening .envelope-flap { transform:rotateX(180deg); }
+    .opening-screen.opening .wax-seal { opacity:0; transform:translate(-50%,-50%) scale(.72); }
+    .opening-screen.opening .envelope-card { transform:translateY(-70px); }
+    .opening-button { position:relative; z-index:3; border:1px solid #956820; background:rgba(255,251,241,.42); color:#805a25; padding:clamp(15px,1.5vw,21px) clamp(32px,5vw,62px); font:clamp(10px,1vw,13px) Montserrat,sans-serif; letter-spacing:4px; text-transform:uppercase; cursor:pointer; transition:background .3s,color .3s,box-shadow .3s; }
+    .opening-button:hover { background:#76501c; color:#fff9ed; box-shadow:0 8px 24px #76501c26; }
+    .opening-button::after { content:"  →"; font-size:16px; }
+    .opening-note { margin-top:clamp(16px,2.5vh,26px); color:#806b4b; font:clamp(9px,1vw,12px) Montserrat,sans-serif; letter-spacing:clamp(1px,.22vw,2.5px); text-transform:uppercase; }
+    @media (max-width:600px) { .opening-wrap{width:100%;} .envelope{width:94vw;height:clamp(330px,94vw,440px);min-height:330px;} .envelope-card{left:6%;right:6%;} .envelope-card strong{font-size:clamp(36px,10vw,56px);margin:13px 0 17px;} .opening-screen::before,.opening-screen::after{width:130px;height:160px;opacity:.55;} .opening-kicker{letter-spacing:3px;} .opening-button{letter-spacing:2.5px;} }
+    @media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation-duration:.01ms !important; transition-duration:.01ms !important; scroll-behavior:auto !important; } #goldParticles { display:none; } }
+    .music-toggle { position:fixed; z-index:20; right:16px; bottom:16px; border:1px solid #c39a52; border-radius:50px; padding:11px 14px; background:rgba(251,248,239,.94); color:#76501c; font:10px Montserrat,sans-serif; letter-spacing:1px; box-shadow:0 5px 18px #5b48221c; cursor:pointer; }
+    .countdown { margin:30px auto 5px; width:min(650px,100%); }
+    .countdown-title { font:9px Montserrat,sans-serif; letter-spacing:4px; text-transform:uppercase; color:#806234; margin-bottom:14px; }
+    .countdown-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; }
+    .countdown-unit { padding:13px 5px 10px; border:1px solid rgba(195,154,82,.48); background:rgba(255,255,255,.34); }
+    .countdown-number { display:block; color:#76501c; font:clamp(25px,4vw,38px) 'Bodoni Moda',serif; line-height:1.1; }
+    .countdown-label { display:block; margin-top:6px; color:#88775d; font:8px Montserrat,sans-serif; letter-spacing:1.5px; text-transform:uppercase; }
+    @media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation-duration:.01ms !important; transition-duration:.01ms !important; scroll-behavior:auto !important; } #goldParticles { display:none; } }
+    @media (max-width:480px) { .countdown-grid { gap:5px; } .countdown-unit { padding:11px 2px 9px; } .countdown-label { letter-spacing:.7px; font-size:7px; } .music-toggle { right:10px; bottom:10px; } }
+
   </style>
+
+
+
 </head>
 
-<body>
-  <main>
-    <p>UNA INVITACIÓN ESPECIAL</p>
-    <h1>Carmen &amp; Andrés</h1>
-    <p>Boda civil · 14 de noviembre de 2026</p>
-    <p>12:00 p. m. · Marsellesa Eventos</p>
-    <p>Abriendo tu invitación…</p>
-    <p>
-      <a href="https://script.google.com/macros/s/AKfycbxy31hogMUPDE_lrTVhIOfGdHGrw-dZYIUjrh20ht5svDg3NYqUxUJ21SNFMMVXue0GJw/exec">
-        Si no se abre automáticamente, pulsa aquí.
-      </a>
-    </p>
-  </main>
+
+
+
+
+
+
+
+
+
+
+<body class="invitation-locked">
+
+<canvas id="goldParticles" aria-hidden="true"></canvas>
+<div class="opening-screen" id="openingScreen">
+  <div class="opening-wrap">
+    <div class="opening-kicker">Una invitación especial</div>
+    <div class="envelope" aria-hidden="true">
+      <div class="envelope-card"><span>Con amor</span><strong>Carmen & Andrés</strong><span>14 · 11 · 2026</span></div>
+      <div class="envelope-flap"></div><div class="wax-seal" aria-label="Sello dorado con dos anillos entrelazados"><svg viewBox="0 0 100 100" role="img" aria-hidden="true"><defs><linearGradient id="ringGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff0b6"/><stop offset=".48" stop-color="#f5d982"/><stop offset="1" stop-color="#9c681b"/></linearGradient></defs><g fill="none" stroke="url(#ringGold)" stroke-width="5"><circle cx="39" cy="53" r="23"/><circle cx="61" cy="45" r="23"/></g><g fill="none" stroke="#fff0b6" stroke-width="1.2" opacity=".85"><path d="M22 37 Q34 24 47 34"/><path d="M53 28 Q67 18 78 33"/></g><path d="M47 29 L53 20 L59 29" fill="none" stroke="#f5df9b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    </div>
+    <button class="opening-button" id="openInvitation" type="button">Abrir invitación</button>
+    <div class="opening-note">Una historia que nos encantará compartir contigo</div>
+  </div>
+</div>
+<audio id="weddingMusic" preload="none" loop>
+  <source src="https://drewseratto97.github.io/carmen-andres-invitacion/audio/the-moment.mp3" type="audio/mpeg">
+</audio>
+<button class="music-toggle" id="musicToggle" type="button" aria-label="Pausar o reproducir música" hidden>♫ Música</button>
+
+
+
+
+
+
+
+
+
+
+
+
+<? if (guest.ok) { ?>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ======================================================
+
+
+
+     PÁGINA 1
+
+
+
+\\====================================================== -->
+
+
+
+
+
+
+
+<section class="page">
+
+
+
+
+
+
+
+  <div class="invitation">
+
+
+
+
+
+
+
+    <div class="inner-border"></div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- BOTÁNICA SUPERIOR IZQUIERDA -->
+
+
+
+
+
+
+
+    <svg class="botanical top-left"
+
+
+
+         viewBox="0 0 470 610"
+
+
+
+         xmlns="http://www.w3.org/2000/svg">
+
+
+
+
+
+
+
+      <path class="stem"
+
+
+
+            d="M10 15 C110 80 115 180 170 250 C230 325 270 430 315 590"/>
+
+
+
+
+
+
+
+      <path class="stem"
+
+
+
+            d="M20 90 C120 100 180 150 250 205 C330 270 375 320 440 355"/>
+
+
+
+
+
+
+
+      <path class="stem"
+
+
+
+            d="M55 170 C120 220 145 285 150 370"/>
+
+
+
+
+
+
+
+
+
+
+
+      <!-- HOJAS -->
+
+
+
+
+
+
+
+      <ellipse class="leaf"
+
+
+
+               cx="120"
+
+
+
+               cy="90"
+
+
+
+               rx="48"
+
+
+
+               ry="18"
+
+
+
+               transform="rotate(25 120 90)"/>
+
+
+
+
+
+
+
+      <ellipse class="leaf-light"
+
+
+
+               cx="180"
+
+
+
+               cy="130"
+
+
+
+               rx="50"
+
+
+
+               ry="17"
+
+
+
+               transform="rotate(-35 180 130)"/>
+
+
+
+
+
+
+
+      <ellipse class="leaf"
+
+
+
+               cx="85"
+
+
+
+               cy="165"
+
+
+
+               rx="55"
+
+
+
+               ry="18"
+
+
+
+               transform="rotate(-40 85 165)"/>
+
+
+
+
+
+
+
+      <ellipse class="leaf-light"
+
+
+
+               cx="215"
+
+
+
+               cy="205"
+
+
+
+               rx="50"
+
+
+
+               ry="17"
+
+
+
+               transform="rotate(40 215 205)"/>
+
+
+
+
+
+
+
+      <ellipse class="leaf"
+
+
+
+               cx="135"
+
+
+
+               cy="250"
+
+
+
+               rx="57"
+
+
+
+               ry="19"
+
+
+
+               transform="rotate(-35 135 250)"/>
+
+
+
+
+
+
+
+      <ellipse class="leaf-light"
+
+
+
+               cx="245"
+
+
+
+               cy="285"
+
+
+
+               rx="55"
+
+
+
+               ry="18"
+
+
+
+               transform="rotate(30 245 285)"/>
+
+
+
+
+
+
+
+      <ellipse class="leaf"
+
+
+
+               cx="175"
+
+
+
+               cy="340"
+
+
+
+               rx="60"
+
+
+
+               ry="19"
+
+
+
+               transform="rotate(-25 175 340)"/>
+
+
+
+
+
+
+
+
+
+
+
+      <!-- FLORES -->
+
+
+
+
+
+
+
+      <g transform="translate(62 58)">
+
+
+
+
+
+
+
+        <ellipse class="flower"
+
+
+
+                 cx="0" cy="-35"
+
+
+
+                 rx="30" ry="48"/>
+
+
+
+
+
+
+
+        <ellipse class="flower"
+
+
+
+                 cx="32" cy="-8"
+
+
+
+                 rx="30" ry="48"
+
+
+
+                 transform="rotate(60 32 -8)"/>
+
+
+
+
+
+
+
+        <ellipse class="flower"
+
+
+
+                 cx="-32" cy="-8"
+
+
+
+                 rx="30" ry="48"
+
+
+
+                 transform="rotate(-60 -32 -8)"/>
+
+
+
+
+
+
+
+        <ellipse class="flower"
+
+
+
+                 cx="0" cy="22"
+
+
+
+                 rx="30" ry="48"/>
+
+
+
+
+
+
+
+        <circle class="flower-center"
+
+
+
+                cx="0" cy="-2"
+
+
+
+                r="17"/>
+
+
+
+
+
+
+
+      </g>
+
+
+
+
+
+
+
+
+
+
+
+      <g transform="translate(30 235) scale(.72)">
+
+
+
+
+
+
+
+        <ellipse class="flower"
+
+
+
+                 cx="0" cy="-35"
+
+
+
+                 rx="30" ry="48"/>
+
+
+
+
+
+
+
+        <ellipse class="flower"
+
+
+
+                 cx="32" cy="-8"
+
+
+
+                 rx="30" ry="48"
+
+
+
+                 transform="rotate(60 32 -8)"/>
+
+
+
+
+
+
+
+        <ellipse class="flower"
+
+
+
+                 cx="-32" cy="-8"
+
+
+
+                 rx="30" ry="48"
+
+
+
+                 transform="rotate(-60 -32 -8)"/>
+
+
+
+
+
+
+
+        <ellipse class="flower"
+
+
+
+                 cx="0" cy="22"
+
+
+
+                 rx="30" ry="48"/>
+
+
+
+
+
+
+
+        <circle class="flower-center"
+
+
+
+                cx="0" cy="-2"
+
+
+
+                r="17"/>
+
+
+
+
+
+
+
+      </g>
+
+
+
+
+
+
+
+
+
+
+
+      <!-- RAMITAS / BAYAS -->
+
+
+
+
+
+
+
+      <circle class="berry" cx="300" cy="110" r="4"/>
+
+
+
+      <circle class="berry" cx="325" cy="130" r="4"/>
+
+
+
+      <circle class="berry" cx="350" cy="155" r="4"/>
+
+
+
+      <circle class="berry" cx="375" cy="180" r="4"/>
+
+
+
+      <circle class="berry" cx="400" cy="205" r="4"/>
+
+
+
+
+
+
+
+    </svg>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- MENSAJE SUPERIOR -->
+
+
+
+
+
+
+
+    <div class="top-message">
+
+
+
+      EL AMOR<br>
+
+
+
+      TAMBIÉN SE CELEBRA<br>
+
+
+
+      EN LOS PEQUEÑOS<br>
+
+
+
+      GRANDES MOMENTOS
+
+
+
+
+
+
+
+      <div class="tiny-line"></div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="content">
+
+
+
+
+
+
+
+      <div class="small-heading">
+
+
+
+        BODA CIVIL
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <div class="names">
+
+
+
+        CARMEN
+
+
+
+      </div>
+
+
+
+
+
+
+
+      <div class="ampersand-row">
+
+
+
+
+
+
+
+        <div class="amp-line"></div>
+
+
+
+
+
+
+
+        <div class="ampersand">
+
+
+
+          &
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="amp-line"></div>
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+      <div class="names" style="margin-top:0;">
+
+
+
+        ANDRÉS
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <!-- PADRES -->
+
+
+
+
+
+
+
+      <div class="parents">
+
+
+
+
+
+
+
+        <div class="parent-column">
+
+
+
+
+
+
+
+          <div class="parent-title">
+
+
+
+            Hija de
+
+
+
+          </div>
+
+
+
+
+
+
+
+          <div class="parent-name">
+
+
+
+            Diana Ramona Bovea Hoyos<br>
+
+
+
+            y Jairo Enrique Marín Miranda
+
+
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="parent-divider"></div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="parent-column">
+
+
+
+
+
+
+
+          <div class="parent-title">
+
+
+
+            Hijo de
+
+
+
+          </div>
+
+
+
+
+
+
+
+          <div class="parent-name">
+
+
+
+            Andrés Silva Lara<br>
+
+
+
+            y Ena Luz Ortega Caballero
+
+
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <!-- MENSAJE -->
+
+
+
+
+
+
+
+      <div class="main-message">
+
+
+
+
+
+
+
+        CON GRAN ALEGRÍA QUEREMOS COMPARTIR CONTIGO<br>
+
+
+
+        UNO DE LOS DÍAS MÁS IMPORTANTES DE NUESTRAS VIDAS.
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <div class="countdown" aria-label="Cuenta regresiva para la boda">
+        <div class="countdown-title">Faltan para nuestro gran día</div>
+        <div class="countdown-grid">
+          <div class="countdown-unit"><span class="countdown-number" id="cdDays">--</span><span class="countdown-label">Días</span></div>
+          <div class="countdown-unit"><span class="countdown-number" id="cdHours">--</span><span class="countdown-label">Horas</span></div>
+          <div class="countdown-unit"><span class="countdown-number" id="cdMinutes">--</span><span class="countdown-label">Minutos</span></div>
+          <div class="countdown-unit"><span class="countdown-number" id="cdSeconds">--</span><span class="countdown-label">Segundos</span></div>
+        </div>
+      </div>
+
+      <div class="romantic-message">
+
+
+
+
+
+
+
+        Después de caminar juntos, de soñar, de crecer
+
+
+
+        y de elegirnos cada día, hemos decidido unir
+
+
+
+        nuestras vidas en matrimonio.
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <div class="main-message"
+
+
+
+           style="margin-top:32px;">
+
+
+
+
+
+
+
+        NOS ENCANTARÁ CONTAR CON TU PRESENCIA<br>
+
+
+
+        PARA CELEBRAR ESTE NUEVO CAPÍTULO<br>
+
+
+
+        JUNTO A LAS PERSONAS QUE MÁS QUEREMOS.
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <!-- EVENTO -->
+
+
+
+
+
+
+
+      <div class="event-divider">
+
+
+
+
+
+
+
+        <div class="event-divider-line"></div>
+
+
+
+
+
+
+
+        <div class="rings">
+
+
+
+          ◯
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="event-divider-line"></div>
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <div class="event-info">
+
+
+
+
+
+
+
+
+
+
+
+        <div class="event-item">
+
+
+
+
+
+
+
+          <div class="event-icon">
+
+
+
+            ♧
+
+
+
+          </div>
+
+
+
+
+
+
+
+          <div class="event-label">
+
+
+
+            Sábado
+
+
+
+          </div>
+
+
+
+
+
+
+
+          <div class="event-value">
+
+
+
+            14 de noviembre
+
+
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="event-item">
+
+
+
+
+
+
+
+          <div class="event-icon">
+
+
+
+            ◷
+
+
+
+          </div>
+
+
+
+
+
+
+
+          <div class="event-label">
+
+
+
+            Hora
+
+
+
+          </div>
+
+
+
+
+
+
+
+          <div class="event-value">
+
+
+
+            12:00 P.M.
+
+
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="event-item">
+
+
+
+
+
+
+
+          <div class="event-icon">
+
+
+
+            ♧
+
+
+
+          </div>
+
+
+
+
+
+
+
+          <div class="event-label">
+
+
+
+            Lugar
+
+
+
+          </div>
+
+
+
+
+
+
+
+          <div class="event-value">
+
+
+
+            Marsellesa Eventos
+
+          </div>
+
+          <div class="venue-address">
+            Cra. 52 #74-90, Barranquilla, Atlántico
+          </div>
+
+          <div class="venue-actions">
+            <a class="venue-button" href="https://www.google.com/maps/search/?api=1&amp;query=Marsellesa+Eventos%2C+Cra.+52+%2374-90%2C+Barranquilla%2C+Atl%C3%A1ntico%2C+Colombia" target="_blank" rel="noopener noreferrer">Ver en Google Maps</a>
+            <a class="venue-button venue-button-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=Marsellesa+Eventos%2C+Cra.+52+%2374-90%2C+Barranquilla%2C+Atl%C3%A1ntico%2C+Colombia" target="_blank" rel="noopener noreferrer">Cómo llegar</a>
+          </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <div class="romantic-message"
+
+
+
+           style="margin-top:35px;">
+
+
+
+
+
+
+
+        Será un honor compartir contigo un almuerzo formal
+
+
+
+        en celebración de nuestro amor.
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <!-- DRESS -->
+
+
+
+
+
+
+
+      <div class="dress-code">
+
+
+
+
+
+
+
+        <div class="dress-title">
+
+
+
+          Código de vestimenta
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="dress-value">
+
+
+
+          Formal
+
+
+
+        </div>
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <div class="footer-message">
+
+
+
+
+
+
+
+        GRACIAS POR SER PARTE<br>
+
+
+
+        DE NUESTRA HISTORIA
+
+
+
+
+
+
+
+        <div class="heart">
+
+
+
+          ♥
+
+
+
+        </div>
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- BOTÁNICA INFERIOR DERECHA -->
+
+
+
+
+
+
+
+    <svg class="botanical bottom-right"
+
+
+
+         viewBox="0 0 500 610"
+
+
+
+         xmlns="http://www.w3.org/2000/svg">
+
+
+
+
+
+
+
+      <path class="stem"
+
+
+
+            d="M480 600 C430 500 380 440 350 355 C320 270 255 180 120 90"/>
+
+
+
+
+
+
+
+      <path class="stem"
+
+
+
+            d="M470 540 C400 510 330 470 280 410"/>
+
+
+
+
+
+
+
+      <path class="stem"
+
+
+
+            d="M420 440 C390 380 375 315 380 230"/>
+
+
+
+
+
+
+
+
+
+
+
+      <ellipse class="leaf"
+
+
+
+               cx="390"
+
+
+
+               cy="470"
+
+
+
+               rx="60"
+
+
+
+               ry="20"
+
+
+
+               transform="rotate(30 390 470)"/>
+
+
+
+
+
+
+
+      <ellipse class="leaf-light"
+
+
+
+               cx="330"
+
+
+
+               cy="405"
+
+
+
+               rx="55"
+
+
+
+               ry="18"
+
+
+
+               transform="rotate(-35 330 405)"/>
+
+
+
+
+
+
+
+      <ellipse class="leaf"
+
+
+
+               cx="365"
+
+
+
+               cy="340"
+
+
+
+               rx="58"
+
+
+
+               ry="19"
+
+
+
+               transform="rotate(30 365 340)"/>
+
+
+
+
+
+
+
+      <ellipse class="leaf-light"
+
+
+
+               cx="285"
+
+
+
+               cy="290"
+
+
+
+               rx="52"
+
+
+
+               ry="18"
+
+
+
+               transform="rotate(-30 285 290)"/>
+
+
+
+
+
+
+
+      <ellipse class="leaf"
+
+
+
+               cx="300"
+
+
+
+               cy="225"
+
+
+
+               rx="55"
+
+
+
+               ry="18"
+
+
+
+               transform="rotate(25 300 225)"/>
+
+
+
+
+
+
+
+
+
+
+
+      <g transform="translate(410 480) scale(1.2)">
+
+
+
+
+
+
+
+        <ellipse class="flower"
+
+
+
+                 cx="0" cy="-35"
+
+
+
+                 rx="30" ry="48"/>
+
+
+
+
+
+
+
+        <ellipse class="flower"
+
+
+
+                 cx="32" cy="-8"
+
+
+
+                 rx="30" ry="48"
+
+
+
+                 transform="rotate(60 32 -8)"/>
+
+
+
+
+
+
+
+        <ellipse class="flower"
+
+
+
+                 cx="-32" cy="-8"
+
+
+
+                 rx="30" ry="48"
+
+
+
+                 transform="rotate(-60 -32 -8)"/>
+
+
+
+
+
+
+
+        <ellipse class="flower"
+
+
+
+                 cx="0" cy="22"
+
+
+
+                 rx="30" ry="48"/>
+
+
+
+
+
+
+
+        <circle class="flower-center"
+
+
+
+                cx="0" cy="-2"
+
+
+
+                r="17"/>
+
+
+
+
+
+
+
+      </g>
+
+
+
+
+
+
+
+
+
+
+
+      <g transform="translate(320 275) scale(.55)">
+
+
+
+
+
+
+
+        <ellipse class="flower"
+
+
+
+                 cx="0" cy="-35"
+
+
+
+                 rx="30" ry="48"/>
+
+
+
+
+
+
+
+        <ellipse class="flower"
+
+
+
+                 cx="32" cy="-8"
+
+
+
+                 rx="30" ry="48"
+
+
+
+                 transform="rotate(60 32 -8)"/>
+
+
+
+
+
+
+
+        <ellipse class="flower"
+
+
+
+                 cx="-32" cy="-8"
+
+
+
+                 rx="30" ry="48"
+
+
+
+                 transform="rotate(-60 -32 -8)"/>
+
+
+
+
+
+
+
+        <ellipse class="flower"
+
+
+
+                 cx="0" cy="22"
+
+
+
+                 rx="30" ry="48"/>
+
+
+
+
+
+
+
+        <circle class="flower-center"
+
+
+
+                cx="0" cy="-2"
+
+
+
+                r="17"/>
+
+
+
+
+
+
+
+      </g>
+
+
+
+
+
+
+
+    </svg>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ======================================================
+
+
+
+     PÁGINA 2 — INVITACIÓN PERSONALIZADA
+
+
+
+\\====================================================== -->
+
+
+
+
+
+
+
+<section class="page">
+
+
+
+
+
+
+
+  <div class="invitation">
+
+
+
+
+
+
+
+    <div class="inner-border"></div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- FLOR SUPERIOR -->
+
+
+
+
+
+
+
+    <svg class="botanical top-left"
+
+
+
+         viewBox="0 0 470 610"
+
+
+
+         xmlns="http://www.w3.org/2000/svg">
+
+
+
+
+
+
+
+      <path class="stem"
+
+
+
+            d="M10 15 C110 80 115 180 170 250 C230 325 270 430 315 590"/>
+
+
+
+
+
+
+
+      <ellipse class="leaf"
+
+
+
+               cx="120"
+
+
+
+               cy="90"
+
+
+
+               rx="48"
+
+
+
+               ry="18"
+
+
+
+               transform="rotate(25 120 90)"/>
+
+
+
+
+
+
+
+      <ellipse class="leaf-light"
+
+
+
+               cx="180"
+
+
+
+               cy="130"
+
+
+
+               rx="50"
+
+
+
+               ry="17"
+
+
+
+               transform="rotate(-35 180 130)"/>
+
+
+
+
+
+
+
+      <ellipse class="leaf"
+
+
+
+               cx="85"
+
+
+
+               cy="165"
+
+
+
+               rx="55"
+
+
+
+               ry="18"
+
+
+
+               transform="rotate(-40 85 165)"/>
+
+
+
+
+
+
+
+      <g transform="translate(62 58)">
+
+
+
+
+
+
+
+        <ellipse class="flower"
+
+
+
+                 cx="0" cy="-35"
+
+
+
+                 rx="30" ry="48"/>
+
+
+
+
+
+
+
+        <ellipse class="flower"
+
+
+
+                 cx="32" cy="-8"
+
+
+
+                 rx="30" ry="48"
+
+
+
+                 transform="rotate(60 32 -8)"/>
+
+
+
+
+
+
+
+        <ellipse class="flower"
+
+
+
+                 cx="-32" cy="-8"
+
+
+
+                 rx="30" ry="48"
+
+
+
+                 transform="rotate(-60 -32 -8)"/>
+
+
+
+
+
+
+
+        <ellipse class="flower"
+
+
+
+                 cx="0" cy="22"
+
+
+
+                 rx="30" ry="48"/>
+
+
+
+
+
+
+
+        <circle class="flower-center"
+
+
+
+                cx="0" cy="-2"
+
+
+
+                r="17"/>
+
+
+
+
+
+
+
+      </g>
+
+
+
+
+
+
+
+    </svg>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="content guest-content">
+
+
+
+
+
+
+
+      <div class="small-heading">
+
+
+
+        UNA INVITACIÓN ESPECIAL
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <div class="guest-intro">
+
+
+
+        Hemos reservado este lugar para
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <div class="guest-name">
+
+
+
+        <?= guest.invitado ?>
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <div class="ampersand-row">
+
+
+
+
+
+
+
+        <div class="amp-line"></div>
+
+
+
+
+
+
+
+        <div class="ampersand">
+
+
+
+          ♥
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="amp-line"></div>
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <div class="guest-text">
+
+
+
+
+
+
+
+        Será un honor compartir contigo
+
+
+
+        este momento tan especial de nuestras vidas.
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <div class="reserved">
+
+
+
+        Hemos reservado para ti
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <div class="slots">
+
+
+
+
+
+
+
+        <?= guest.cupos ?>
+
+
+
+
+
+
+
+        <?= guest.cupos == 1 ? 'cupo' : 'cupos' ?>
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <? if (
+
+  String(guest.confirmado).trim().toLowerCase() === 'sí' ||
+
+  String(guest.confirmado).trim().toLowerCase() === 'si' ||
+
+  String(guest.confirmado).trim().toLowerCase() === 'no'
+
+) { ?>
+
+  <div class="message" style="color:<?= String(guest.confirmado).trim().toLowerCase() === 'no' ? '#8d5147' : '#6b765c' ?>;">
+
+    <? if (String(guest.confirmado).trim().toLowerCase() === 'no') { ?>
+
+      <strong>Gracias por avisarnos.</strong><br><br>
+
+      Hemos registrado que no podrás acompañarnos.
+
+    <? } else { ?>
+
+      <strong>¡Tu asistencia está confirmada!</strong><br><br>
+
+      Hemos registrado <strong><?= guest.asistentes ?></strong>
+
+      <?= guest.asistentes == 1 ? 'asistente.' : 'asistentes.' ?>
+
+      <br><br>Nos vemos el 14 de noviembre. 🤍
+
+    <? } ?>
+
+  </div>
+
+<? } else { ?>
+
+  <button class="rsvp" onclick="mostrarRSVP()">Confirmar asistencia</button>
+
+  <div id="rsvpBox" class="rsvp-box">
+
+    <div class="guest-text" style="font-size:21px;margin-top:0;">¿Podrás acompañarnos?</div>
+
+    <div style="margin-top:20px;font-family:Montserrat,sans-serif;font-size:12px;line-height:2.5;">
+
+      <label style="display:block;"><input type="radio" name="respuesta" value="Sí" onchange="cambiarRespuesta()"> ¡Sí, asistiré!</label>
+
+      <label style="display:block;"><input type="radio" name="respuesta" value="No" onchange="cambiarRespuesta()"> No podré asistir</label>
+
+    </div>
+
+    <div id="cantidadBox" style="display:none;margin-top:20px;">
+
+      <? if (Number(guest.cupos) > 1) { ?>
+
+        <div class="guest-text" style="font-size:21px;margin-top:0;">¿Cuántas personas asistirán?</div>
+
+        <select id="cantidad" class="select"></select>
+
+      <? } else { ?>
+
+        <div style="margin-top:12px;font-family:Montserrat,sans-serif;font-size:12px;">1 persona</div>
+
+      <? } ?>
+
+    </div>
+
+    <br>
+
+    <button id="btnEnviar" class="rsvp" onclick="confirmar()" disabled>Enviar respuesta</button>
+
+    <div id="mensaje" class="message"></div>
+
+  </div>
+
+<? } ?>
+
+
+
+      <div class="verse">
+
+
+
+
+
+
+
+        “Las muchas aguas no podrán apagar el amor,
+
+
+
+        ni lo ahogarán los ríos.”
+
+
+
+
+
+
+
+        <span class="verse-reference">
+
+
+
+          Cantares 8:7
+
+
+
+        </span>
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- FLOR INFERIOR DERECHA -->
+
+
+
+
+
+
+
+    <svg class="botanical bottom-right"
+
+
+
+         viewBox="0 0 500 610"
+
+
+
+         xmlns="http://www.w3.org/2000/svg">
+
+
+
+
+
+
+
+      <path class="stem"
+
+
+
+            d="M480 600 C430 500 380 440 350 355 C320 270 255 180 120 90"/>
+
+
+
+
+
+
+
+      <ellipse class="leaf"
+
+
+
+               cx="390"
+
+
+
+               cy="470"
+
+
+
+               rx="60"
+
+
+
+               ry="20"
+
+
+
+               transform="rotate(30 390 470)"/>
+
+
+
+
+
+
+
+      <ellipse class="leaf-light"
+
+
+
+               cx="330"
+
+
+
+               cy="405"
+
+
+
+               rx="55"
+
+
+
+               ry="18"
+
+
+
+               transform="rotate(-35 330 405)"/>
+
+
+
+
+
+
+
+      <ellipse class="leaf"
+
+
+
+               cx="365"
+
+
+
+               cy="340"
+
+
+
+               rx="58"
+
+
+
+               ry="19"
+
+
+
+               transform="rotate(30 365 340)"/>
+
+
+
+
+
+
+
+      <g transform="translate(410 480) scale(1.2)">
+
+
+
+
+
+
+
+        <ellipse class="flower"
+
+
+
+                 cx="0" cy="-35"
+
+
+
+                 rx="30" ry="48"/>
+
+
+
+
+
+
+
+        <ellipse class="flower"
+
+
+
+                 cx="32" cy="-8"
+
+
+
+                 rx="30" ry="48"
+
+
+
+                 transform="rotate(60 32 -8)"/>
+
+
+
+
+
+
+
+        <ellipse class="flower"
+
+
+
+                 cx="-32" cy="-8"
+
+
+
+                 rx="30" ry="48"
+
+
+
+                 transform="rotate(-60 -32 -8)"/>
+
+
+
+
+
+
+
+        <ellipse class="flower"
+
+
+
+                 cx="0" cy="22"
+
+
+
+                 rx="30" ry="48"/>
+
+
+
+
+
+
+
+        <circle class="flower-center"
+
+
+
+                cx="0" cy="-2"
+
+
+
+                r="17"/>
+
+
+
+
+
+
+
+      </g>
+
+
+
+
+
+
+
+    </svg>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<? } else { ?>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ======================================================
+
+
+
+     INVITACIÓN NO ENCONTRADA
+
+
+
+\\====================================================== -->
+
+
+
+
+
+
+
+<section class="page">
+
+
+
+
+
+
+
+  <div class="invitation">
+
+
+
+
+
+
+
+    <div class="content">
+
+
+
+
+
+
+
+      <div class="error">
+
+
+
+        <?= guest.error ?>
+
+
+
+      </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<? } ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+(function () {
+  const canvas = document.getElementById('goldParticles');
+  const ctx = canvas && canvas.getContext ? canvas.getContext('2d') : null;
+  let particles = [], width = 0, height = 0, frame = 0;
+  const reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function resizeCanvas() {
+    if (!canvas || !ctx) return;
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    width = window.innerWidth; height = window.innerHeight;
+    canvas.width = Math.floor(width * dpr); canvas.height = Math.floor(height * dpr);
+    canvas.style.width = width + 'px'; canvas.style.height = height + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const count = Math.min(34, Math.max(16, Math.floor(width / 30)));
+    particles = Array.from({length:count}, () => ({x:Math.random()*width,y:Math.random()*height,r:.5+Math.random()*1.5,a:.12+Math.random()*.28,v:.08+Math.random()*.22,phase:Math.random()*Math.PI*2}));
+  }
+  function drawParticles() {
+    if (!ctx || reducedMotion) return;
+    ctx.clearRect(0,0,width,height);
+    particles.forEach(p => {
+      p.y -= p.v; p.phase += .008; p.x += Math.sin(p.phase)*.12;
+      if (p.y < -4) { p.y = height + 4; p.x = Math.random()*width; }
+      ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+      ctx.fillStyle = 'rgba(181,137,57,' + p.a + ')'; ctx.fill();
+    });
+    frame = requestAnimationFrame(drawParticles);
+  }
+  if (canvas && ctx) { resizeCanvas(); drawParticles(); window.addEventListener('resize', resizeCanvas, {passive:true}); }
+
+  const target = new Date('2026-11-14T12:00:00-05:00').getTime();
+  function updateCountdown() {
+    const remaining = Math.max(0, target - Date.now());
+    const values = {cdDays:Math.floor(remaining/86400000), cdHours:Math.floor((remaining%86400000)/3600000), cdMinutes:Math.floor((remaining%3600000)/60000), cdSeconds:Math.floor((remaining%60000)/1000)};
+    Object.keys(values).forEach(id => { const el=document.getElementById(id); if(el) el.textContent=String(values[id]).padStart(2,'0'); });
+  }
+  updateCountdown(); window.setInterval(updateCountdown,1000);
+
+  const openBtn = document.getElementById('openInvitation');
+  const cover = document.getElementById('openingScreen');
+  const audio = document.getElementById('weddingMusic');
+  const musicBtn = document.getElementById('musicToggle');
+  if (openBtn && cover) openBtn.addEventListener('click', function () {
+    cover.classList.add('opening');
+    document.body.classList.remove('invitation-locked');
+    document.body.classList.add('invitation-opened');
+    if (musicBtn) musicBtn.hidden = false;
+    if (audio) { audio.volume = 0.32; const playAttempt = audio.play(); if (playAttempt && playAttempt.catch) playAttempt.catch(function(){ if(musicBtn) musicBtn.textContent='♫ Reproducir música'; }); }
+    window.setTimeout(function(){ cover.style.display='none'; },1100);
+  });
+  if (musicBtn && audio) musicBtn.addEventListener('click', function () {
+    if (audio.paused) { const attempt=audio.play(); if(attempt && attempt.catch) attempt.catch(function(){}); musicBtn.textContent='♫ Pausar música'; }
+    else { audio.pause(); musicBtn.textContent='♫ Reproducir música'; }
+  });
+  if (audio && musicBtn) audio.addEventListener('play',function(){musicBtn.textContent='♫ Pausar música';});
+  if (audio && musicBtn) audio.addEventListener('pause',function(){musicBtn.textContent='♫ Reproducir música';});
+})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ========================================
+
+
+
+     MOSTRAR RSVP
+
+
+
+  ======================================== */
+
+
+
+
+
+
+
+  function mostrarRSVP() {
+
+  const box = document.getElementById("rsvpBox");
+
+  if (!box) return;
+
+  box.style.display = "block";
+
+  cargarCupos();
+
+  box.scrollIntoView({ behavior: "smooth", block: "center" });
+
+}
+
+
+
+function cargarCupos() {
+
+  const select = document.getElementById("cantidad");
+
+  if (!select || select.options.length > 0) return;
+
+  const cupos = <?= Number(guest.cupos) || 1 ?>;
+
+  for (let i = 1; i <= cupos; i++) {
+
+    const option = document.createElement("option");
+
+    option.value = i;
+
+    option.textContent = i === 1 ? "1 persona" : i + " personas";
+
+    select.appendChild(option);
+
+  }
+
+}
+
+
+
+function cambiarRespuesta() {
+
+  const elegida = document.querySelector('input[name="respuesta"]:checked');
+
+  const cantidadBox = document.getElementById("cantidadBox");
+
+  const btnEnviar = document.getElementById("btnEnviar");
+
+  if (!elegida || !cantidadBox || !btnEnviar) return;
+
+  cantidadBox.style.display = elegida.value === "Sí" ? "block" : "none";
+
+  btnEnviar.disabled = false;
+
+}
+
+
+
+function confirmar() {
+
+  const elegida = document.querySelector('input[name="respuesta"]:checked');
+
+  const mensaje = document.getElementById("mensaje");
+
+  const btnEnviar = document.getElementById("btnEnviar");
+
+  const select = document.getElementById("cantidad");
+
+  if (!elegida || !mensaje || !btnEnviar) return;
+
+
+
+  const respuesta = elegida.value;
+
+  const cupos = <?= Number(guest.cupos) || 1 ?>;
+
+  const cantidad = respuesta === "No" ? 0 : (cupos === 1 ? 1 : Number(select.value));
+
+
+
+  if (respuesta === "Sí" && (!Number.isInteger(cantidad) || cantidad < 1 || cantidad > cupos)) {
+
+    mensaje.textContent = "Selecciona una cantidad válida.";
+
+    return;
+
+  }
+
+
+
+  btnEnviar.disabled = true;
+
+  mensaje.style.color = "#806234";
+
+  mensaje.textContent = "Registrando tu respuesta...";
+
+
+
+  google.script.run
+
+    .withSuccessHandler(function(resultado) {
+
+      if (resultado && resultado.ok) {
+
+        mensaje.style.color = respuesta === "No" ? "#8d5147" : "#68765d";
+
+        mensaje.textContent = resultado.mensaje;
+
+        document.getElementById("rsvpBox").style.display = "none";
+
+        const boton = document.querySelector('button[onclick="mostrarRSVP()"]');
+
+        if (boton) boton.style.display = "none";
+
+        setTimeout(function() { window.location.reload(); }, 1800);
+
+      } else {
+
+        mensaje.textContent = (resultado && resultado.error) || "No pudimos registrar la respuesta.";
+
+        btnEnviar.disabled = false;
+
+      }
+
+    })
+
+    .withFailureHandler(function(error) {
+
+      mensaje.style.color = "#8d5147";
+
+      mensaje.textContent = "Ocurrió un error. Intenta nuevamente.";
+
+      btnEnviar.disabled = false;
+
+      console.error(error);
+
+    })
+
+    .confirmAttendance("<?= guest.id ?>", respuesta, cantidad);
+
+}
+
+
+
+  </script>
+
+
+
+
+
+
+
 </body>
+
+
+
 </html>
