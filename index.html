@@ -6672,7 +6672,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const audio = document.getElementById('weddingMusic');
   const musicBtn = document.getElementById('musicToggle');
   if (openBtn && cover) openBtn.addEventListener('click', function () {
-    cover.classList.add('opening');
+    cover.classList.add('is-opening');
     document.body.classList.remove('invitation-locked');
     document.body.classList.add('invitation-opened');
     if (musicBtn) musicBtn.hidden = false;
