@@ -6631,7 +6631,7 @@
 
 
 <script>
-(function () {
+document.addEventListener('DOMContentLoaded', function () {
   const canvas = document.getElementById('goldParticles');
   const ctx = canvas && canvas.getContext ? canvas.getContext('2d') : null;
   let particles = [], width = 0, height = 0, frame = 0;
@@ -6685,7 +6685,7 @@
   });
   if (audio && musicBtn) audio.addEventListener('play',function(){musicBtn.textContent='♫ Pausar música';});
   if (audio && musicBtn) audio.addEventListener('pause',function(){musicBtn.textContent='♫ Reproducir música';});
-})();
+});
 
 
 
