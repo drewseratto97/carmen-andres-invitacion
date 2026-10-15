@@ -1,27 +1,32 @@
-```html
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Carmen & Andrés</title>
-</head>
-<body>
-  <p>Abriendo la invitación...</p>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Carmen & Andrés | Nuestra boda</title>
   <script>
     const destino = new URL(
-      "https://script.google.com/macros/s/AKfycbx9-FmLf83vxrUmJBj6oEbK-Fjs-Iu1_halBf7niPGz6iI1uNiDFTa4i7hnCnrl1xhoeA/exec"
+      "https://script.google.com/macros/s/AKfycbzeTytTnyLUeYWXAO4AGpA8aUZpinZTywVwCH6-37dNq9j3hSa1mQm8HEa_cOrq7Y5E7Q/exec"
     );
 
-    const id = new URLSearchParams(location.search).get("id");
+    const parametros = new URLSearchParams(window.location.search);
+    const id = parametros.get("id");
 
     if (id) {
       destino.searchParams.set("id", id);
     }
 
-    location.replace(destino.href);
+    window.location.replace(destino.href);
   </script>
+</head>
+<body>
+  <p>Abriendo tu invitación de Carmen & Andrés… 🤍</p>
+  <p>Si no te redirige automáticamente,
+    <a href="https://script.google.com/macros/s/AKfycbzeTytTnyLUeYWXAO4AGpA8aUZpinZTywVwCH6-37dNq9j3hSa1mQm8HEa_cOrq7Y5E7Q/exec">
+      pulsa aquí
+    </a>.
+  </p>
 </body>
 </html>
-```
