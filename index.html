@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,15 +8,20 @@
 </head>
 <body>
   <p>Abriendo la invitación...</p>
+
   <script>
     const destino = new URL(
-      "https://script.google.com/macros/s/AKfycbx3MKxmXM74lnvXe5B6fInp_bF0v837ecn2AagbNs12pv2InUx1QFH7MtLqWQAal-MgdA/exec"
+      "https://script.google.com/macros/s/AKfycbx9-FmLf83vxrUmJBj6oEbK-Fjs-Iu1_halBf7niPGz6iI1uNiDFTa4i7hnCnrl1xhoeA/exec"
     );
 
     const id = new URLSearchParams(location.search).get("id");
-    if (id) destino.searchParams.set("id", id);
+
+    if (id) {
+      destino.searchParams.set("id", id);
+    }
 
     location.replace(destino.href);
   </script>
 </body>
 </html>
+```
