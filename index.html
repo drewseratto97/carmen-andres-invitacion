@@ -307,32 +307,35 @@
     <div class="footer-ornament" aria-hidden="true">— ❦ —</div>
   </main>
 
-  <script>
-    (() => {
-      const SCRIPT_URL =
-        "https://script.google.com/macros/s/AKfycbzjboMtl3Piipz0Zwm8mN5tDEFvhQeeWpzr9hhWNmRRECykQ9y934BsjsZECsQPYuPsMA/exec";
+  
+<script>
+  (() => {
+    const SCRIPT_URL =
+      "https://script.google.com/macros/s/AKfycbzjboMtl3Piipz0Zwm8mN5tDEFvhQeeWpzr9hhWNmRRECykQ9y934BsjsZECsQPYuPsMA/exec";
 
-      const params = new URLSearchParams(window.location.search);
-      const guestId = params.get("id");
-      const button = document.getElementById("openInvitation");
-      const cover = document.getElementById("cover");
+    const currentUrl = new URL(window.location.href);
+    const guestId = currentUrl.searchParams.get("id")?.trim();
 
-      button.addEventListener("click", () => {
-        button.disabled = true;
-        button.textContent = "ABRIENDO TU INVITACIÓN…";
-        cover.classList.add("opening");
+    const button = document.getElementById("openInvitation");
+    const cover = document.getElementById("cover");
 
-        const destination = new URL(SCRIPT_URL);
-        if (guestId) {
-          destination.searchParams.set("id", guestId);
-        }
+    button.addEventListener("click", () => {
+      if (!guestId) {
+        alert(
+          "Esta invitación no tiene un ID asignado. " +
+          "Abre el enlace personalizado que recibiste."
+        );
+        return;
+      }
 
-        window.setTimeout(() => {
-          window.location.href = destination.toString();
-        }, 650);
-      });
-    })();
-  </script>
-</body>
-</html>
-```
+      button.disabled = true;
+      button.textContent = "ABRIENDO TU INVITACIÓN…";
+      cover.classList.add("opening");
+
+      const destination = new URL(SCRIPT_URL);
+      destination.searchParams.set("id", guestId);
+
+      window.location.assign(destination.href);
+    });
+  })();
+</script>
