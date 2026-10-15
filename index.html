@@ -1,28 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carmen & Andrés | Nuestra invitación</title>
-  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carmen & Andrés</title>
 </head>
 <body>
-  <p>Abriendo la invitación de Carmen y Andrés…</p>
-
+  <p>Abriendo la invitación...</p>
   <script>
     const destino = new URL(
       "https://script.google.com/macros/s/AKfycbzjboMtl3Piipz0Zwm8mN5tDEFvhQeeWpzr9hhWNmRRECykQ9y934BsjsZECsQPYuPsMA/exec"
     );
 
-    const parametros = new URLSearchParams(window.location.search);
-    const id = parametros.get("id");
+    const id = new URLSearchParams(location.search).get("id");
+    if (id) destino.searchParams.set("id", id);
 
-    if (id) {
-      destino.searchParams.set("id", id);
-    }
-
-    window.location.replace(destino.href);
+    location.replace(destino.href);
   </script>
 </body>
 </html>
